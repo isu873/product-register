@@ -8,7 +8,7 @@ use App\Models\Product;
 
 class ProductController extends Controller
 {
-    public function importCsv(ImportCsvRequest $request)
+    public function importCsv(ImportCsvRequest $request): \Illuminate\Http\RedirectResponse
     {
         $file = $request->file;
 
